@@ -22,8 +22,7 @@ data: {
 <%= button_to "Delete", [post,comment], class:"btn btn-danger", method: :delete %>
 </div>
 <div id="edit-form-<%= comment.id%>" class="d-none"> 
-<%= render 'comments/form', post: @post, comment:comment,
-submit_label: "Update"%>
+<%= render 'comments/form', post: @post, comment:comment %>
 </div>
 <%end%>
 <hr />

@@ -15,19 +15,18 @@ data: {
     controller:"comments",
     action:"comments#toggleForm",
     comments_form_param: "edit-form-#{comment.id}",
-    comments_body_param: "comment-body-#{comment.id}"
+    comments_body_param: "comment-body-#{comment.body}"
 }
 %>
 <%# name, then where its linking to, remote true means behind the scenes, then the class %>
 <%= button_to "Delete", [post,comment], class:"btn btn-danger", method: :delete %>
 </div>
 <div id="edit-form-<%= comment.id%>" class="d-none"> 
-<%= render 'comments/form', post: @post, comment:comment,
-submit_label: "Update"%>
+<%= render 'comments/form', post: @post, comment:comment %>
 </div>
 <%end%>
 <hr />
-<div id="comment-body-<%= comment.id %>">
+<div id="comment-body-<%comment.id%>">
 <%= comment.body%>
 </div>
 </div>

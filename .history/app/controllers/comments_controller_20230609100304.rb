@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
         @comment = @post.comments.find(params[:id])
 
         respond_to do |format| 
-            if @comment.update(comment_params)
+            if(@comment.update(comment_params)
             format.html {redirect_to post_url(@post), notice: "comment successfully updated"}
             
        
@@ -31,9 +31,8 @@ class CommentsController < ApplicationController
                format.html {redirect_to post_url(post), notice: "nah didnt update"}
          
         end
-    end
         end
-
+        
     private
     def comment_params
         params.require(:comment).permit(:body)

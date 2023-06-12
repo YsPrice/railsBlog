@@ -1,0 +1,23 @@
+<div class="comment-<%= comment.id %> container"
+style="border:1px solid black; padding:1em; margin:1em;"
+>
+<%= comment.user.name%> <br />
+<% if(comment.updated_at - comment.created_at) > 1 ? <span> Edited <%= time_ago_in_words(comment.updated_at)%> ago</span> : 
+<span> Posted <%=time_ago_in_words(comment.created_at) %> ago</span>%>
+
+
+
+<%end%>
+<% if current_user == comment.user %>
+<div class="button-group float-end">
+<%= link_to "Edit", nil, remote:true,  class:"btn btn-warning" %>
+<%# name, then where its linking to, remote true means behind the scenes, then the class %>
+<%= button_to "Delete", [post,comment], class:"btn btn-danger", method: :delete %>
+</div>
+<div id="edit.form" <%= comment.id%> class="d-none"> 
+<%= render 'comments/form', post: @post, comment:comment %>
+</div>
+<%end%>
+<hr />
+<%= comment.body%>
+</div>

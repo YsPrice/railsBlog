@@ -1,0 +1,24 @@
+<h1><%=@user.name %></h1>
+
+<%= image_tag @user.avatar if @user.avatar.attached? %>
+<h6>
+<%=pluralize(@post_count, "posts")%>
+
+
+</h6>
+<h6><%= pluralize(@user.views, "view") %></h6>
+<div>
+<h4><%= @user.name%>'s posts <hr class="solid"/></h4>
+<div id="posts">
+
+
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+      <hr class="solid"/>
+  <% end %>
+
+</div>
+</div>

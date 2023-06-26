@@ -1,0 +1,5 @@
+<h1><%=@user.name %></h1>
+
+<%= image_tag current_user.avatar if current_user.avatar.attached? %>
+<h6><%= @user.post_count%></h6>
+<h6><%= pluralize(@user.views, "view") %></h6>

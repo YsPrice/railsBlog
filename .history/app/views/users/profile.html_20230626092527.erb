@@ -1,0 +1,8 @@
+<h1><%=@user.name %></h1>
+
+<%= image_tag @user.avatar if @user.avatar.attached? %>
+<h6>
+<%= link_to pluralize(@post_count, "posts"), search_path(search: user.name)%>
+
+</h6>
+<h6><%= pluralize(@user.views, "view") %></h6>

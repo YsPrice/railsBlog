@@ -1,0 +1,23 @@
+<div id="<%= dom_id post %>">
+      <h2> 
+      <strong>Title:</strong>
+      <%= post.title %>
+    </h2>
+
+
+
+
+    <h3>posted by
+  <%= link_to post.user.name, user_path(post.user)%>
+  </h3>
+<h4>
+    <h6><%=pluralize(post.views, "view")%></h6>
+  </h4>
+
+  <p>
+    <strong>Body:</strong>
+    <%= post.body %>
+  </p>
+
+
+</div>

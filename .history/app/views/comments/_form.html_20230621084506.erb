@@ -1,0 +1,11 @@
+<%=form_with(model: [post, comment, image, pictures]) do |f| %>
+    <div class="form-control">
+    <%= f.rich_text_area :body %>
+    <%= f.submit submit_label, class: "btn btn-primary mt-1" %>
+      <%= link_to image_tag(f.image), f.image %>
+      <hr/>
+      <% f.pictures.each do |picture| %>
+      <%= link_to image_tag(picture), picture%>
+      <% end %>
+    </div>
+    <% end %>

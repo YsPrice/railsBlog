@@ -193,9 +193,9 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    ransack (4.0.0)
-      activerecord (>= 6.1.5)
-      activesupport (>= 6.1.5)
+    ransack (2.6.0)
+      activerecord (>= 6.0.4)
+      activesupport (>= 6.0.4)
       i18n
     regexp_parser (2.8.0)
     reline (0.3.4)
@@ -262,10 +262,11 @@ DEPENDENCIES
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
-  noticed (~> 1.6)
+  noticed (~> 1.5)
   puma (~> 5.0)
-  rails (~> 7.0.4, >= 7.0.4.3)
-  ransack (~> 4.0)
+  rails (~> 7.0.1)
+  ransack (~> 2.5)
+  ruby-vips
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)

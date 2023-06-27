@@ -1,0 +1,12 @@
+<!-- confirm_delete.html.erb -->
+<h2>Are you sure you want to delete this post?</h2>
+
+<p>
+  <%= @post.title %> - <%= @post.body %>
+</p>
+
+<%= form_tag delete_post_path(@post), :method=> 'delete' do %>
+  <%= submit_tag 'Confirm Delete' %>
+<% end %>
+
+<%= link_to 'Cancel', posts_path %>

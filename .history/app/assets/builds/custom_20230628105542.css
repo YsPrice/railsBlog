@@ -1,0 +1,30 @@
+.red{
+color:white;
+display:flex;
+justify-content: center;
+font-size:5em;
+}
+.app-container{
+    background-color: #EDFFED;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23EDFFED' cx='50' cy='0' r='50'/%3E%3Cg fill='%23e7f9e7' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e1f2e1' cx='50' cy='100' r='50'/%3E%3Cg fill='%23dbebdb' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d4e4d4' cx='50' cy='200' r='50'/%3E%3Cg fill='%23cdddcd' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6d5c6' cx='50' cy='300' r='50'/%3E%3Cg fill='%23bfcebf' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b8c6b8' cx='50' cy='400' r='50'/%3E%3Cg fill='%23b0bdb0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a8b4a8' cx='50' cy='500' r='50'/%3E%3Cg fill='%239fab9f' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2396a196' cx='50' cy='600' r='50'/%3E%3Cg fill='%238c978c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23828c82' cx='50' cy='700' r='50'/%3E%3Cg fill='%23778077' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%236a726a' cx='50' cy='800' r='50'/%3E%3Cg fill='%235c635c' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%234b514b' cx='50' cy='900' r='50'/%3E%3Cg fill='%23353935' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23020202' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+}
+p{
+color:white;
+}
+.h3{
+color:white;
+}
+
+.navstyle{
+    background: rgb(183,191,193);
+    background: linear-gradient(90deg, rgba(183,191,193,1) 0%, rgba(230,229,255,1) 1%, rgba(106,112,108,1) 22%);
+    
+
+
+}
+.nav-text{
+font-size:2em;
+color: white;
+}

@@ -1,0 +1,21 @@
+<div class="posts-container1">
+<div class="posts-container">
+<p style="color: green"><%= notice %></p>
+<%= link_to "Create New Post", new_post_path %>
+<h1 class="header-posts">Posts</h1>
+
+
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+      <hr class="solid"/>
+  <% end %>
+
+</div>
+</div>
+</div>
+

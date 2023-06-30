@@ -1,0 +1,26 @@
+<div id="<%= dom_id post %>">
+      <h2> 
+      <strong>Title:</strong>
+      <%= post.title %>
+    </h2>
+    <h3>posted by
+    <div>
+  <%= link_to post.user.name, user_path(post.user)%>
+
+    <%= image_tag post.user.avatar, :class => "pfp" if post.user.avatar.present? %>
+    </div>
+  </div>
+
+  </h3>
+<h4>
+  <%=pluralize(post.views, "view")%>
+  </h4>
+
+  <article>
+
+    <%= post.body %>
+  </article>
+
+
+</div>
+

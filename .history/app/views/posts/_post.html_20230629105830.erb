@@ -1,0 +1,27 @@
+<div class="post-bio-cont" id="<%= dom_id post %>">
+      
+       <div class="post-bio">
+       <h2> 
+      <strong>Title:</strong>
+      <%= post.title %>
+    </h2>
+     
+    <h3 class="post-bio-mid">
+    posted by: 
+  <%= link_to post.user.name, user_path(post.user), class:"link-po"%>
+    <%= image_tag post.user.avatar, :class => "pfp post-bio-mid1" if post.user.avatar.present? %>
+    </div>
+  </h3>
+  <div lass="body"></div>
+   <p>
+    <%= post.body %>
+  </p>
+<h4>
+  <%=pluralize(post.views, "view")%>
+  </h4>
+
+ 
+  </div>
+
+</div>
+

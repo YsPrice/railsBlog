@@ -1,0 +1,20 @@
+<div>
+<div class="posts-container">
+<p style="color: green"><%= notice %></p>
+<%= link_to "Create New Post", new_post_path %>
+<h1 class="header-posts">Posts</h1>
+</div>
+
+
+<div  id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p class="show-link">
+      <%= link_to "Show this post",  :class => "show-link"post %>
+    </p>
+      <hr class="solid"/>
+  <% end %>
+
+</div>
+</div>
+

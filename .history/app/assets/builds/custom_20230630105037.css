@@ -1,0 +1,253 @@
+/* HOME PAGE STYLES__________________ */
+.red{
+color:white;
+display:flex;
+justify-content: center;
+font-size:5em;
+}
+.app-container{
+    background-color: #4D4D43;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%234D4D43' cx='50' cy='0' r='50'/%3E%3Cg fill='%23595b4e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23646657' cx='50' cy='100' r='50'/%3E%3Cg fill='%236e715f' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23777b67' cx='50' cy='200' r='50'/%3E%3Cg fill='%2380846e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23888c75' cx='50' cy='300' r='50'/%3E%3Cg fill='%238f947c' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23969b82' cx='50' cy='400' r='50'/%3E%3Cg fill='%239da388' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a3a98d' cx='50' cy='500' r='50'/%3E%3Cg fill='%23aab092' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b0b698' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b6bd9d' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbc3a2' cx='50' cy='700' r='50'/%3E%3Cg fill='%23c1c8a6' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6ceab' cx='50' cy='800' r='50'/%3E%3Cg fill='%23cbd3af' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d0d9b4' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d5deb8' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23DAE3BC' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    max-width:100vw;
+
+}
+p{
+color:white;
+}
+.image{
+}
+.padding-r{
+    margin-right: .1%;
+}
+.padding-r1{
+    margin-right: 2.1%;
+}
+.h3{
+color:white;
+}
+
+.navstyle{
+border:1px ;
+background-color:silver; 
+opacity: 0.7;
+
+
+
+}
+.search-pos{
+    display:flex;
+    position: absolute; left: 40%;
+    margin-right:20%;
+
+
+ 
+}
+.nav-text{
+font-size:1.8em;
+color: white;
+
+}
+.nav-text-logo{
+    font-size:1.7em;
+    color: white;
+    text-decoration: none;
+    margin-right: 3%;
+    }
+.profile-opt{
+
+
+}
+
+.button-post{
+margin:auto;
+    
+}
+
+.blog-guy{
+ position:relative; left:43.5%;
+  transform: scale(1.6);
+  max-width: fit-content;
+  padding-top: 8px;
+
+}
+.button-pos{
+
+    padding:1%;
+}
+
+/* ____________________________________ */
+
+/* POSTS PAGE STYLES_____________________ */
+
+.posts-container1{
+  background-color: grey;
+    
+    }
+.posts-container{
+display:flex;
+justify-content: center;
+padding-bottom: 3%;
+
+
+}
+.pfp{
+    border:1px solid white;
+    border-radius: 90%;
+    transform:scale(.4);
+    padding: 0%; 
+    height: fit-content;
+    margin-left:-1%;
+    margin-top:-1%;
+
+}
+.post-bio{
+margin-top: -1%;
+
+}
+.post-bio-cont{
+margin:auto;
+
+background-color: grey;
+opacity: .6;
+
+}
+
+.body{
+  
+    color:white;
+    background-color: transparent;
+    height:auto;
+
+    font-size:1.4em;
+    padding-left:2%;
+
+   
+}
+.trix-content{
+    color: white;
+    padding:1%;
+    background-color: grey;
+}
+.post-bio-mid{
+  height:10vh;
+  margin-right:2.1%;
+  color:white;
+}
+.post-bio-mid1{
+    max-height:8vh;
+  }
+  .link-po{
+      text-decoration: white;
+      color:red;
+    margin-left: 1%;
+
+  }
+
+  .link-po:hover{
+      color:green;
+  }
+  .title-post{
+      display: flex;
+    color:white;
+    justify-content: center;
+  word-spacing: .1ch;
+  }
+  .opac{
+    background-color: aliceblue;
+    opacity: 0.5;
+  }
+  .views-post{
+      display: flex;
+      margin-top:-3%;
+      justify-content: center;
+      font-size: 1.1em;
+  }
+  .title{
+   margin-right: 1%;
+  }
+  .show-link{
+display: flex;
+justify-content: center;
+font-size: 1.6em;
+text-decoration: none;
+  }
+  .show-link1{
+      color:white;
+      
+  }
+  .show-link1:hover{
+     color: green;
+     font-size:1.65em;
+     transition: 1s;
+  }
+  .header-posts{
+      display:flex;
+color:white;
+    position: relative; right:8vw;
+      font-size: 3.6em;
+
+      justify-content: center;
+      @media screen and (max-width:700px ) {
+        position: relative; right:18vw;
+        font-size: 2.6em;
+      }
+ 
+  }
+  .new-post{
+
+    display: flex;
+    font-size:1.8em;
+padding-bottom:1%;
+padding:1%;
+    justify-content: center;
+    position: relative; top:8vh; left:4.8%;
+    color:white;
+    margin-bottom: 7%;
+
+    @media screen and (max-width:900px ) and  (min-width:300px ) {
+        position: relative; top:6vh; left:12.8%;
+padding-bottom:5%;
+    }
+  }
+  .new-post:hover{
+    color: green;
+
+  
+ }
+ .line{
+     color: white;
+ }
+ .new-post-title{
+
+color:white;
+
+ }
+ .f-title{
+font-size:1.5em;
+border-radius:1%;
+color:white;
+
+    
+ }
+ .f-body{
+    font-size:1.3em;
+    margin-top: 1%;
+    color:white;
+ }
+ .f-submit{
+    
+
+ }
+ .comments-con{
+display:flex;
+
+
+ }
+ .comments{
+     font-size: 1.5em;
+     display:flex;
+     margin: 1%;
+     position: relative; left:31%;
+ }

@@ -1,11 +1,11 @@
 <div class="container">
-<h1>Editing post</h1>
+<h1 class="title-edit">Editing post</h1>
 
 <%= render "form", post: @post %>
 
 <br>
 
-<div>
+<div class="post-links">
   <%= link_to "Show this post", @post %> |
   <%= link_to "Back to posts", posts_path %>
 </div>

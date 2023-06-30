@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-center ">
+<h1><%=@user.name %></h1>
+
+<%= image_tag(@user.avatar, class:"rounded-circle" ) if @user.avatar.attached? %>
+</div>
+<div class="d-flex justify-content-center">
+<h4>
+<%=pluralize(@post_count, "posts")%>
+
+
+</h4>
+
+<h5>Profile has <%= pluralize(@user.views, "view") %></h5>
+</div>
+<hr class="solid"/>
+<div>
+<div class="d-flex justify-content-center">
+<h4><%= @user.name%>'s posts </h4>
+
+</div>
+<hr class="solid"/>
+<div id="posts">
+
+
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p  class="show-link">
+      <%= link_to "Show this post", post , class:"show-link1"%>
+    </p>
+      <hr class="solid"/>
+  <% end %>
+
+</div>
+</div>

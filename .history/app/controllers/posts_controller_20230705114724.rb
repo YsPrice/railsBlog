@@ -4,17 +4,21 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
   end
-
+  def confirm_delete
+    @post = Post.find(params[:id])
+  end
   # GET /posts/1 or /posts/1.json
   def show
 incremViews = @post.views == nil ? 1 : @post.views + 1
- @post.update(views:incremViews)     
+ @post.update(views:incremViews)   
+ @comments = == @post.comments == nil ? "no comements yet!" : @post.comments.order(created_at: :desc) 
+ mark_notifications_as_read 
 end
   # GET /posts/new
   def new
-     @post = current_user.posts.new
+     @post = current_user.posts.build
   end
 
   # GET /posts/1/edit
@@ -23,7 +27,7 @@ end
 
   # POST /posts or /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
 
     respond_to do |format|
       if @post.save
@@ -53,11 +57,14 @@ end
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
-    @post.destroy
-
-    respond_to do |format|
-      format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
-      format.json { head :no_content }
+    def destroy
+      @post = Post.find(params[:id])
+      if @post.destroy
+        flash[:notice] = 'Post was successfully deleted.'
+      else
+        flash[:error] = 'There was an error deleting the post.'
+      end
+      redirect_to posts_path
     end
   end
 
@@ -67,7 +74,14 @@ end
       @post = Post.find(params[:id])
     end
   
+def mark_notifications_as_read
+  if current_user
+    notifications_to_mark_as_read = @post.notifications_as_post.where(recipient: current_user)
+    notifications_to_mark_as_read.update_all(read_at: "now")
 
+
+  end
+end
     # Only allow a list of trusted parameters through.
     def post_params
       params.require(:post).permit(:title, :body, :views)

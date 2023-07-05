@@ -1,5 +1,6 @@
 //= link_tree ../images
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
-//= link application.css
-//= link custom.css
+//= link application.scss
+//= link custom.scss
+//= require_tree ./channels
